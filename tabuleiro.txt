@@ -1,0 +1,10 @@
+# Informe o tabuleiro de sudoko (considere x como vazio)
+5 x x x x x 4 x 8
+x x x x x x x x x
+x x 9 8 x x x x 7
+x x 8 x 4 x x x x
+x x x x x x x x x
+x x x x 5 x 1 x x
+2 x x x x 1 9 x x
+x x x x x x x x x
+9 x 5 x x x x x 4
