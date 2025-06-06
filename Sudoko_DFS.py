@@ -1,3 +1,5 @@
+import time
+
 def geraTabuleiro():
     print('Lendo arquivo...')
 
@@ -104,8 +106,11 @@ tabuleiro = geraTabuleiro()
 
 printTabuleiro(tabuleiro)
 
+# Inicia o timer
+start = time.time()
+
 if buscaProfundidade(tabuleiro):
-    print("\nSolução Encontrada! Sudoku resolvido com sucesso:")
+    print(f"\nSolução Encontrada! Sudoku resolvido com sucesso em {time.time() - start:.2f}s:")
     printTabuleiro(tabuleiro)
 else:
-    print("\nSolução não Encontrada! Não foi possível resolver o Sudoku.")
+    print(f"\nSolução não Encontrada! Não foi possível resolver o Sudoku. Tempo decorrido: {time.time() - start:.2f}s")
